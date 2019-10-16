@@ -76,7 +76,7 @@ public class Employee {
 
 		
 	
-	    // define tostring
+	    // define toString
 		@Override
 		public String toString() {
 			return "Employee [id=" + id + ", fisrtName=" + fisrtName + ", lastname=" + lastname + ", email=" + email
