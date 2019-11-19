@@ -18,10 +18,10 @@ public class Employee {
 		private int id;
 		
 		@Column(name="first_name")
-		private String fisrtName;
+		private String firstName;
 		
 		@Column(name="last_name")
-		private String lastname;
+		private String lastName;
 		
 		@Column(name="email")
 		private String email;
@@ -33,9 +33,9 @@ public class Employee {
 			
 		}	
 		
-		public Employee(String fisrtName, String lastname, String email) {
-			this.fisrtName = fisrtName;
-			this.lastname = lastname;
+		public Employee(String firstName, String lastName, String email) {
+			this.firstName = firstName;
+			this.lastName = lastName;
 			this.email = email;
 		}
 
@@ -50,20 +50,20 @@ public class Employee {
 			this.id = id;
 		}
 
-		public String getFisrtName() {
-			return fisrtName;
+		public String getFirstName() {
+			return firstName;
 		}
 
-		public void setFisrtName(String fisrtName) {
-			this.fisrtName = fisrtName;
+		public void setFirstName(String firstName) {
+			this.firstName = firstName;
 		}
 
-		public String getLastname() {
-			return lastname;
+		public String getLastName() {
+			return lastName;
 		}
 
-		public void setLastname(String lastname) {
-			this.lastname = lastname;
+		public void setLastName(String lastName) {
+			this.lastName = lastName;
 		}
 
 		public String getEmail() {
@@ -79,7 +79,7 @@ public class Employee {
 	    // define toString
 		@Override
 		public String toString() {
-			return "Employee [id=" + id + ", fisrtName=" + fisrtName + ", lastname=" + lastname + ", email=" + email
+			return "Employee [id=" + id + ", fisrtName=" + firstName + ", lastname=" + lastName + ", email=" + email
 					+ "]";
 		}
 }
